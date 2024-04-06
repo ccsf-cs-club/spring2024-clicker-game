@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgvnlmb3eure"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_6cf03"]
+[ext_resource type="FontFile" uid="uid://ol4n7fcg7i5a" path="res://FontRoboto/Roboto-Regular.ttf" id="2_xln2m"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_6cf03")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 472.0
+offset_top = 206.0
+offset_right = 567.0
+offset_bottom = 229.0
+theme_override_fonts/font = ExtResource("2_xln2m")
+theme_override_font_sizes/font_size = 24
+text = "Hello World!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 209.0
+offset_top = 317.0
+offset_right = 286.0
+offset_bottom = 340.0
+text = "[dynamic]"
