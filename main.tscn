@@ -7,6 +7,7 @@
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_6cf03")
 LabelCounter = NodePath("CanvasLayer/HBoxContainer/Control/LabelCounter")
+CounterButton = NodePath("CanvasLayer/HBoxContainer/Control/Button")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -75,5 +76,7 @@ offset_bottom = 92.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "[dynamic]"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/Control/Button" to="CanvasLayer/HBoxContainer/Control/Button" method="_on_pressed"]
