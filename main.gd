@@ -1,10 +1,13 @@
 extends Node2D
 
+# LabelCounter can now be selected in the inspector
+@export_node_path("Label") var LabelCounter
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Text node
-	var label = $TextInCode
+	print("Label to display: ", LabelCounter)
+	var label = get_node(LabelCounter)
 	label.text = "Hello from code!~"
 
 	# Font for Size
