@@ -4,7 +4,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Text node
-	var label = $Label2
+	var label = $TextInCode
 	label.text = "Hello from code!~"
 
 	# Font for Size
